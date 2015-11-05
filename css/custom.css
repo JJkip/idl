@@ -1,0 +1,159 @@
+/* FontAwesome for working BootSnippet :> */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+@font-face {
+	font-family: 'lato-regular';
+	src:url('fonts/Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'lato-bold';
+	src:url('fonts/Lato-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'marriweather-light';
+	src:url('fonts/Merriweather-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'sourcesanspro-light';
+	src:url('fonts/SourceSansPro-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'sourcesanspro-regular';
+	src:url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.btn-yellow{
+	width:auto;
+	background-color: #dcbd3b;
+	color: #171d23;
+	border-radius: 0px;
+	font-size: 0.75em;
+	padding: 0px 20px 0px 20px;
+}
+.btn-yellow:hover{
+	color: #3F4B59 !important;
+}
+.functionality p {
+	padding-top: 115px;
+}
+
+#login-form .form-control {
+	font-family: 'marriweather-light',sans-serif;
+	font-size: 12px !important;
+	height: auto;
+}
+#primary-menu ul li a {
+	font-family: 'lato-regular',sans-serif;
+	font-size: 16px;
+}
+.dark .slider-caption h2{
+	font-family: 'lato-regular',sans-serif;
+	font-size:40px ;
+}
+.join-idevlink.fadeInUp.animated input {
+	width: 250px;
+	font-family: 'marriweather-light',sans-serif;
+}
+.dark .btn-white{
+	background-color: rgba(250, 250, 250, 0.72);
+	border-color: rgba(0, 0, 0, 0);
+	height: 44px;
+	border-radius: 0px;
+	color: #212121;
+	font-size: 16px;
+	font-family: 'marriweather-light',sans-serif;
+}
+.dark .btn-white:hover, .dark .btn-white:focus, .dark .btn-white:active, .dark .btn-white.active, .dark .open .dropdown-toggle.btn-white{
+	background-color: rgba(250, 250, 250, 0.72);
+	border-color: rgba(0, 0, 0, 0);
+	color: #212121;
+}
+.dark .dropdown-menu {
+	background-color: #202B37;
+	border-color: #596E83;
+	font-family: 'marriweather-light',sans-serif;
+}
+.slider-caption p{
+	font-family: 'sourcesanspro-regular',sans-serif;
+}
+.intro-lead{
+	font-family: 'sourcesanspro-regular',sans-serif;
+	line-height: 1.5;
+	font-size: 24px;
+	color: #171d23;
+}
+.functionality p {
+	color: #171d23;
+}
+[class^="icon-"], [class*=" icon-"], [class^="icon-line-"], [class*=" icon-line-"], [class^="icon-line2-"], [class*=" icon-line2-"], .side-header #primary-menu ul > li.sub-menu > a:after{
+	color: #212121;;
+}
+i.icon-angle-down.infinite.animated.fadeInDown {
+	color: #8D9FB1;
+}
+div#stars i {
+	padding: 10px 5px 0px 5px;
+}
+select.form-control {
+	height: 45px;
+}
+.btn-action {
+	color: #4b5b74;
+	background-color: #dcbd3b;
+	border-color: #dcbd3b;
+}
+.btn-action:hover, .btn-action:focus, .btn-action.focus, .btn-action:active, .btn-action.active{
+	color: #ffffff;
+	background-color: #dcbd3b;
+	border-color: #dcbd3b;
+}
+.btn-dark-blue {
+	color: #4b5b74;
+	background-color: #fafafa;
+	border-color: #4b5b74;
+}
+.btn-dark-blue:hover, .btn-dark-blue:focus, .btn-dark-blue.focus, .btn-dark-blue:active, .btn-dark-blue.active{
+
+	color: #ffffff;
+	background-color: #4b5b74;
+	border-color: #4b5b74;
+}
+.btn-default {
+	color: #ffffff;
+	background-color: #79B5BF;
+	border-color: #79B5BF;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+	color: #79B5BF;
+	background-color: #ffffff;
+	border-color: #79B5BF;
+}
+.btn-default-on {
+	color: #ffffff;
+	background-color: #79B5BF;
+	border-color: #79B5BF;
+}
+.btn-default-on:hover, .btn-default-on:focus, .btn-default-on.focus, .btn-default-on:active, .btn-default-on.active, .open > .dropdown-toggle.btn-default-on {
+	color: #4b5b74;
+	background-color: #79B5BF;
+	border-color: #79B5BF;
+}
+.btn-dark {
+	color: #ffffff;
+	background-color: #4b5b74;
+	border-color: #4b5b74;
+}
+.btn-dark:hover, .btn-dark:focus, .btn-dark.focus, .btn-dark:active, .btn-dark.active{
+	color: #79B5BF;
+	background-color: #4b5b74;
+	border-color: #4b5b74;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<!-- Document Title
+	============================================= -->
+	<title>iDevLink sheen is sexy </title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo"><img src="images/logo.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo"><img src="images/logo.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="dark">
+						<ul>
+							<li><a href="#"><div>About</div></a></li>
+							<li><a href="#"><div>How It Works</div></a></li>
+							<li><a href="#" id="top-cart-trigger"><div>Login Test</div></a>
+						</ul>
+
+						<!-- Top Cart
+						============================================= -->
+						<div id="top-cart">
+							<a href="#" id="top-cart-trigger"></a>
+							<div class="top-cart-content">
+								<div class="top-cart-items">
+													<div class="form-wrap">
+														<form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+															<div class="form-group">
+																<label for="email" class="sr-only">Email</label>
+																<input type="email" name="email" id="email" class="form-control" placeholder="somebody@example.com">
+															</div>
+															<div class="form-group">
+																<label for="key" class="sr-only">Password</label>
+																<input type="password" name="key" id="key" class="form-control" placeholder="Password">
+															</div>
+															<div class="top-cart-action clearfix">
+																<button class="button button-3d button-small nomargin fright">Login</button>
+															</div>
+														</form>
+													</div>
+								</div>
+
+							</div>
+						</div><!-- #top-cart end -->
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
+
+			<div class="swiper-container swiper-parent">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide dark" style="background-image: url('img/blank-world-map-large.svg');">
+						<div class="container clearfix">
+							<div class="slider-caption slider-caption-center">
+								<h2 data-caption-animate="fadeInUp">Connecting professionals in emerging
+									markets with job opportunities</h2>
+								<div data-caption-animate="fadeInUp" class="join-idevlink">
+									<form class="form-inline" action="form-1.html">
+										<div class="form-group">
+											<label class="sr-only" for="exampleInputEmail3">Email address</label>
+											<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+										</div>
+										<div class="form-group">
+											<div class="btn-group">
+												<button type="button" class="btn btn-white">I want to ...</button>
+												<button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+													<span class="caret"></span>
+													<span class="sr-only">Toggle Dropdown</span>
+												</button>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">List my services</a></li>
+													<li><a href="#">Hire an expert</a></li>
+													<li><a href="#">I'm just curious</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="form-group">
+											<button type="submit" class="btn btn-yellow">JOIN iDEVLINK</button>
+										</div>
+									</form>
+								</div>
+								<p data-caption-animate="fadeInUp" data-caption-delay="200">iDevLink is currently operating in stealth mode. Sign up to be eligible for job opportunities and to stay up to date on our latest developments.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				jQuery(document).ready(function($){
+					var swiperSlider = new Swiper('.swiper-parent',{
+						paginationClickable: false,
+						slidesPerView: 1,
+						grabCursor: true,
+						loop: true,
+						onSwiperCreated: function(swiper){
+							$('[data-caption-animate]').each(function(){
+								var $toAnimateElement = $(this);
+								var toAnimateDelay = $(this).attr('data-caption-delay');
+								var toAnimateDelayTime = 0;
+								if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 750; } else { toAnimateDelayTime = 750; }
+								if( !$toAnimateElement.hasClass('animated') ) {
+									$toAnimateElement.addClass('not-animated');
+									var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+									setTimeout(function() {
+										$toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
+									}, toAnimateDelayTime);
+								}
+							});
+						}
+					});
+				});
+			</script>
+
+			<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+
+		</section>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+					<div class="row clearfix">
+
+						<div class="col-lg-12">
+							<p class="intro-lead">iDevLink connects people working in emerging markets with local and international experts who can help them complete their projects in the most effective and cost-efficient way. Experts can list their services and apply to job postings. iDevLink will help organizations select the best candidates for the job.</p>
+						</div>
+
+					</div>
+					<div class="row functionality">
+						<div class="col-lg-6">
+							<div class="row">
+							<div class="col-md-4 col-lg-4">
+								<img src="images/connect.png" class="img-responsive"/>
+
+							</div>
+							<div class="col-lg-8">
+								<p><b>Connect</b> with like-minded professionals in your area of expertise</p>
+							</div>
+						</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="row">
+							<div class="col-md-4 col-lg-4">
+								<img src="images/demonstrate.png" class="img-responsive"/>
+
+							</div>
+							<div class="col-lg-8">
+								<p><b>Demonstrate</b> your skills to clients to win more jobs</p>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="row functionality">
+						<div class="col-lg-6">
+							<div class="row">
+								<div class="col-md-4 col-lg-4">
+									<img src="images/search.png" class="img-responsive"/>
+
+								</div>
+								<div class="col-lg-8">
+									<p><b>Search</b> for experts to help you complete a successful project</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="row">
+								<div class="col-md-4 col-lg-4">
+									<img src="images/learn.png" class="img-responsive"/>
+
+								</div>
+								<div class="col-lg-8">
+									<p><b>Learn</b> about project opportunities and contracting tips</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_full text-center">
+						<div class="copyright-links">Copyrights &copy;2015 iDevLink PBC<br></div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+
+</body>
+</html>
